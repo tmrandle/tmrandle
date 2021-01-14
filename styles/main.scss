@@ -1,0 +1,40 @@
+@import "./vendor/normalize";
+@import "./partials/colors";
+@import "./partials/mixins";
+@import "./partials/typography";
+
+body{
+    background-image: url(/assets/images/kestrel.jpg);
+
+           
+    header{
+      display:grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 150px;
+      grid-template-areas: 
+        "nav"
+        "mainInfo";
+
+        .myName{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            h1{
+                height: 50px;
+                width: 100%;
+                font-family: $myNameFont;
+                font-size: $mainHeadingSize;
+                text-align: center;
+                grid-area: mainInfo;
+            }
+            p{
+                text-align: center;
+            } //p
+        } //myName
+
+        nav{
+            grid-area: nav;
+        }
+    }  
+} //body
