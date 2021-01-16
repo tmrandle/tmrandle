@@ -4,13 +4,29 @@
 @import "./partials/typography";
 
 body{
-    background-image: url(/assets/images/kestrel.jpg);
+    /*This tells where the image is*/
+    background-image: url(/assets/images/mobileKestrel2.jpg);
+    /*This centers the image at all times*/
+    background-position: center center;
+    /*This makes sure the background won't tile*/
+    background-repeat: no-repeat;
+    /*this makes sure the background doesn't move if the content is larger*/
+    background-attachment: fixed;
+    /*this makes the background scale with the container's size*/
+    background-size: cover;
+    /*this sets a background color while the pic is loading*/
+    background-color: #464646;
+
+/*to change the background for large screens*/
+@media (min-width:768px){
+    background-image: url(/assets/images/kestrel2.jpg);
+}
 
            
     header{
       display:grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 150px;
+      grid-template-rows: 100px;
       grid-template-areas: 
         "nav"
         "mainInfo";
