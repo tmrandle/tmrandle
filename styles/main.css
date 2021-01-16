@@ -344,7 +344,7 @@ template {
 
 body {
   /*This tells where the image is*/
-  background-image: url(/assets/images/mobileKestrel2.jpg);
+  background-image: url("/assets/images/mobileKestrel2.jpg");
   /*This centers the image at all times*/
   background-position: center center;
   /*This makes sure the background won't tile*/
@@ -354,13 +354,13 @@ body {
   /*this makes the background scale with the container's size*/
   background-size: cover;
   /*this sets a background color while the pic is loading*/
-  background-color: #464646;
+  background-color: 464646;
   /*to change the background for large screens*/
 }
 
 @media (min-width: 768px) {
   body {
-    background-image: url(/assets/images/kestrel2.jpg);
+    background-image: url("/assets/images/kestrel2.jpg");
   }
 }
 
