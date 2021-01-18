@@ -361,15 +361,15 @@ body {
 body header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 100px;
-      grid-template-rows: 100px;
+  -ms-grid-columns: 320px;
+      grid-template-columns: 320px;
+  -ms-grid-rows: 125px 150px;
+      grid-template-rows: 125px 150px;
       grid-template-areas: "nav" "mainInfo";
 }
 
 body header .myName {
-  height: 100px;
+  height: 120px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -378,10 +378,13 @@ body header .myName {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 body header .myName h1 {
-  height: 50px;
+  height: 30px;
   width: 100%;
   font-family: adventure, script;
   font-size: 50px;

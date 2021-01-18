@@ -21,24 +21,28 @@ body{
            
     header{
       display:grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 100px;
+      grid-template-columns: 320px ;
+      grid-template-rows: 125px 150px;
       grid-template-areas: 
         "nav"
         "mainInfo";
 
         .myName{
-            height: 100px;
+            height: 120px;
             width: 100%;
             display: flex;
             flex-flow: column nowrap;
+            justify-content: flex-start;
+           
+           
             h1{
-                height: 50px;
+                height: 30px;
                 width: 100%;
                 font-family: $myNameFont;
                 font-size: $mainHeadingSize;
                 text-align: center;
                 grid-area: mainInfo;
+               
             }
             p{
                 text-align: center;
@@ -47,12 +51,16 @@ body{
 
         nav{
             grid-area: nav;
+            // .navbar-collapse{
+            //     background-color: rgba(246, 251, 255, 0.904);
+            // }
         }
     }  
 
             /*to change the background for large screens*/
         @media (min-width:768px){
             background-image: url(../assets/images/kestrel2.jpg);
+           
         }
 
 } //body
